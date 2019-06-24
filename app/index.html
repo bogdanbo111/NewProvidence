@@ -16,60 +16,54 @@
 </head>
 <body>
 <header class="header">
-    <div class="wrapper">
-        <div class="items">
-            <div class="menu">
-                <div class="outer-menu">
-                    <input class="checkbox-toggle" type="checkbox" />
-                    <div class="hamburger">
-                        <div></div>
-                    </div>
-                    <div class="hamburger-menu">
-                        <div>
-                            <div>
-                                <ul>
-                                    <li><a href="#">Tour</a></li>
-                                    <li><a href="#">Features</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Help</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+    <div class="header__font"> </div>
+    <div class="outer-menu">
+        <input class="checkbox-toggle" type="checkbox" />
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="hamburger-menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
+            </div>
+        </div>
+    </div>
 
-                <div class="menu-link">
-                    <nav role="navigation">
-                        <a href="#" class="item">Tour</a>
-                        <a href="#" class="item">Features</a>
-                        <a href="#" class="item">Pricing</a>
+    <div class="wrapper">
+        <div class="header__content">
+            <div class="items">
+                <div class="menu">
+                    <nav role="navigation" class="navigation">
+                        <a href="#" class="navigation__item">Tour</a>
+                        <a href="#" class="navigation__item">Features</a>
+                        <a href="#" class="navigation__item">Pricing</a>
+                    </nav>
+                </div>
+                <div class="logo">
+                    <img src="img/newProvidence.png" alt="newProvidence" >
+                </div>
+                <div class="menu">
+                    <nav role="navigation" class="navigation">
+                        <a href="#" class="navigation__item">Help</a>
+                        <a href="#" class="navigation__item">Contacts</a>
+                        <a href="#" class="navigation__btn">
+                            <img src="img/apple.png" alt="apple" class="navigation__btn-logo">
+                            <span class="navigation__btn-text">
+                                Get App
+                            </span>
+                        </a>
                     </nav>
                 </div>
             </div>
 
-            <div class="logo">
-                <img src="img/newProvidence.png" alt="newProvidence" >
-            </div>
-
-            <div class="menu">
-                <nav role="navigation">
-                    <a href="#" class="item">Help</a>
-                    <a href="#" class="item">Contacts</a>
-                    <a href="#" class="apple-btn">
-                        <img src="img/apple.png" alt="apple" class="apple-logo">
-                        Get App
-                    </a>
-                </nav>
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-    <div class="wrapper">
             <div class="header__title">
                 <h1>
                     What happens tomorrow <br>
@@ -82,18 +76,23 @@
                     to feel quite convivial.
                 </p>
                 <a href="#" class="header__btn">
-                    <h6>
-                        <i class="fas fa-caret-right"
-                           style="color: black; font-size: 1.5em;">
-                        </i>
-                    </h6>
-                    Watch Video
+                    <div class="header__btn_wrapper">
+                        <h6>
+                            <i class="fas fa-caret-right"
+                               style="color: black; font-size: 1.5em;">
+                            </i>
+                        </h6>
+                        Watch Video
+                    </div>
+
                 </a>
             </div>
+            <img src="img/iPhone2.png" class="header__phone">
+        </div>
     </div>
 
-
 </header>
+
 
 
 <!--Description-->
@@ -170,8 +169,8 @@
                     <a href="#" class="protect__btn_left">
                         Try to hack us
                         <h6>
-                            <i class="fas fa-long-arrow-alt-right"
-                               style="color: white; font-size: 1.3em;">
+                            <i class="fas fa-arrow-right"
+                               style="color: white; font-size: 1em;">
                             </i>
                         </h6>
                     </a>
@@ -209,8 +208,14 @@
                     Partners
                 </div>
                 <div class="every__logo">
-                    <img src="img/dropbox.png" alt="" class="every__logo_left">
-                    <img src="img/evernote%20Logo.png" alt="" class="every__logo_right">
+                    <a href="#">
+                        <img src="img/dropbox.png" alt="" class="every__logo_left">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/evernote%20Logo.png" alt="" class="every__logo_right">
+                    </a>
+
                 </div>
             </div>
             <div class="every__img">
@@ -229,13 +234,29 @@
     <p>
         Landing Screen
     </p>
-    <div class="interface__img">
-        <img src="img/screen0.png" alt="" class="interface__item">
-        <img src="img/screen1.png" alt="" class="interface__item">
-        <img src="img/screen2.png" alt="" class="interface__item">
-        <img src="img/screen3.png" alt="" class="interface__item">
-        <img src="img/screen4.png" alt="" class="interface__item">
+
+    <!--Interface slider-->
+
+    <div class="interface__img center">
+        <div class="interface__img-div">
+            <img src="img/screen0.png" alt="" class="interface__item">
+        </div>
+        <div class="interface__img-div">
+            <img src="img/screen1.png" alt="" class="interface__item">
+        </div>
+        <div class="interface__img-div">
+            <img src="img/screen2.png" alt="" class="interface__item">
+        </div>
+        <div class="interface__img-div">
+            <img src="img/screen3.png" alt="" class="interface__item">
+        </div>
+        <div class="interface__img-div">
+            <img src="img/screen4.png" alt="" class="interface__item">
+        </div>
     </div>
+
+    <!--Interface slider end-->
+
     <div class="interface__form">
         <p>
             <i>New</i>Providence
@@ -245,15 +266,15 @@
         </h2>
         <form action="#" class="order">
             <input type="email" class="order__email" placeholder="denis@getcraftwork.com">
-            <div class="order__button">
-                <a href="#" class="order__btn">
+            <div class="order__button" >
+                <button class="order__btn">
                     Send Invite
                     <h6>
-                        <i class="fas fa-long-arrow-alt-right"
-                           style="color: white; font-size: 1.3em;">
+                        <i class="fas fa-arrow-right"
+                           style="color: white; font-size: 1em;">
                         </i>
                     </h6>
-                </a>
+                </button>
             </div>
         </form>
         <div class="interface__btn">
@@ -278,6 +299,9 @@
 <!--Review-->
 <section class="review">
     <div class="wrapper">
+
+        <!--Review slider-->
+
         <div class="respond-slider ">
             <div class="slick">
                 <div class="slick__img ">
@@ -302,38 +326,140 @@
                 <div class="slick__img ">
                     <img src="img/user3.png" alt="" class="slick__img-item">
                 </div>
+
+            </div>
+
+            <div class="slick__nav">
+                <div class="slick__text">
+                    <div class="review__title">
+                        New Providence is the great UI kit
+                    </div>
+                    <div class="review__text">
+                        "Just then her head struck against the roof of the hall:
+                        in fact she <br>
+                        was now more than nine feet high,
+                        and she at once took up the <br>
+                        little golden key and hurried off
+                        to the garden door.”
+
+                    </div>
+                    <img src="img/star.png" alt="" class="review__img">
+                    <div class="review__name bolder">
+                        Cameron Diaz
+                    </div>
+                </div>
+                <div class="slick__text">
+                    <div class="review__title">
+                        New Providence is the great UI kit
+                    </div>
+                    <div class="review__text">
+                        "Just then her head struck against the roof of the hall:
+                        in fact she <br>
+                        was now more than nine feet high,
+                        and she at once took up the <br>
+                        little golden key and hurried off
+                        to the garden door. <br>was now more than nine feet high,
+                        and she at once took up the <br>
+                        little golden key and hurried off
+                        to the garden door.”
+                    </div>
+                    <img src="img/star.png" alt="" class="review__img">
+                    <div class="review__name bolder">
+                        Cameron Dowman
+                    </div>
+                </div>
+                <div class="slick__text">
+                    <div class="review__title">
+                        New Providence is the great UI kit
+                    </div>
+                    <div class="review__text">
+                        "Just then her head struck against the roof of the hall:
+                        in fact she <br>
+                        was now more than nine feet high,
+                        and she at once took up the <br>
+                        little golden key and hurried off
+                        to the garden door.”
+                    </div>
+                    <img src="img/star.png" alt="" class="review__img">
+                    <div class="review__name bolder">
+                        Madonna
+                    </div>
+                </div>
+                <div class="slick__text">
+                    <div class="review__title">
+                        New Providence is the great UI kit
+                    </div>
+                    <div class="review__text">
+                        "Just then her head struck against the roof of the hall:
+                        in fact she <br>
+                        was now more than nine feet high,
+                        and she at once took up the <br>
+                        little golden key and hurried off
+                        to the garden door. <br>
+                        Providence is the great UI kit.”
+
+                    </div>
+                    <img src="img/star.png" alt="" class="review__img">
+                    <div class="review__name bolder">
+                        Cameron Diaz
+                    </div>
+                </div>
+                <div class="slick__text">
+                    <div class="review__title">
+                        New Providence is the great UI kit
+                    </div>
+                    <div class="review__text">
+                        "Just then her head struck against the roof of the hall:
+                        in fact she <br>
+                        was now more than nine feet high,
+                        and she at once took up the <br>
+                        little golden key and hurried off
+                        to the garden door. <br>was now more than nine feet high,
+                        and she at once took up the <br>
+                        little golden key and hurried off
+                        to the garden door.”
+                    </div>
+                    <img src="img/star.png" alt="" class="review__img">
+                    <div class="review__name bolder">
+                        Cameron Dowman
+                    </div>
+                </div>
+                <div class="slick__text">
+                    <div class="review__title">
+                        New Providence is the great UI kit
+                    </div>
+                    <div class="review__text">
+                        "Just then her head struck against the roof of the hall:
+                        in fact she <br>
+                        was now more than nine feet high,
+                        and she at once took up the <br>
+                        little golden key and hurried off
+                        to the garden door.”
+                    </div>
+                    <img src="img/star.png" alt="" class="review__img">
+                    <div class="review__name bolder">
+                        Madonna
+                    </div>
+                </div>
             </div>
             <div class="arrows">
                 <div class="arrows__left">
-                    <i class="fas fa-angle-left"
-                       style="color: #11b2f5; font-size: 2em;">
+                    <i class="fas fa-chevron-left"
+                       style="color: #93969b; font-size: 2em;">
                     </i>
                 </div>
                 <div class="arrows__right">
-                    <i class="fas fa-angle-right"
-                       style="color: #11b2f5; font-size: 2em;">
+                    <i class="fas fa-chevron-right"
+                       style="color: #93969b; font-size: 2em;">
                     </i>
                 </div>
             </div>
         </div>
-        <div class="review__title">
-            New Providence is the great UI kit
-        </div>
-        <div class="review__text">
-            "Just then her head struck against the roof of the hall:
-            in fact she <br>
-            was now more than nine feet high,
-            and she at once took up the <br>
-            little golden key and hurried off
-            to the garden door.”
-        </div>
-        <img src="img/star.png" alt="" class="review__img">
-        <div class="review__name bolder">
-            Cameron Dowman
-        </div>
+
     </div>
 
 </section>
+
 
 <!--Plan-->
 
@@ -348,19 +474,24 @@
                 <h4>
                     You are
                 </h4>
+
+<!--                 The switch - the box around the slider -->
+
                 <div class="plan__btn">
                     <label class="switch">
                         <input type="checkbox" placeholder="Individual" >
                         <span class="slider round">
-                            <span class="slider__left">
+                            <span class="slider__btn slider__left ">
                                 Individual
                             </span>
-                            <span class="slider__right">
+                            <span class="slider__btn slider__right">
                                 Company
                             </span>
                         </span>
                     </label>
                 </div>
+                <!--    End switch -->
+
                 <p>
                     Thus much I thought proper to tell you
                     in relation to yourself,
@@ -451,9 +582,9 @@
                 <form action="#" class="news__form">
                     <input type="email" class="news__email" placeholder="Your e-mail">
                     <div class="news__button">
-                        <a href="#" class="news__btn">
+                        <button class="news__btn">
                             Subscribe
-                        </a>
+                        </button>
                     </div>
                 </form>
                 <p>
